@@ -46,7 +46,7 @@ python2.7 insanity.py
 
 ## Screenshots
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
-More on [Screens](Screens)
+   More in [Screens](Screens)
 
 ## Contribute
 Send me more features it if you want :D
