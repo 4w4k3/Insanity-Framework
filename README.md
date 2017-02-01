@@ -51,14 +51,15 @@ python2.7 insanity.py
 
 ### Screen
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
-   More in [Screens](Screens)
+
+More in [Screens](Screens)
 
 ### Contribute
 Send me more features it if you want :D
 
 **I need your Help to become it to better.**
 
-### To increase
+### To increase:
 - File Transfer
 - Webcam Snaps and Streaming
 - Better compression of portables
@@ -67,6 +68,8 @@ Send me more features it if you want :D
 
 ### Contact
 **4w4k3@protonmail.com**
+
+**Telegram Group:** https://t.me/joinchat/AAAAAAwbI7KU5sjsHNndEg
 
 ## License
 
