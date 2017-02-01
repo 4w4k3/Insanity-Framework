@@ -32,9 +32,7 @@ python2.7 insanity.py
 
 ## Screenshots
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
-![Shot2](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot2.png)
-![Shot3](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot3.png)
-
+More on [Screens](Screens)
 ## Authors
 
 * **Alisson Moretto** - *Coder* - [4w4k3](https://github.com/4w4k3)
