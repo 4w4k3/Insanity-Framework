@@ -53,7 +53,6 @@ Send me more features it if you want :D
 
 ## Contact
 **4w4k3@protonmail.com**
-TELEGRAM GROUP: https://t.me/joinchat/AAAAAAwbI7KU5sjsHNndEg
 
 ## License
 
