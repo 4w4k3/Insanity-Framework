@@ -28,14 +28,19 @@ Taken from [LICENSE](LICENSE).
 
 * apt
 * wine
+* sudo
 * python2.7
+
+### Tested on:
+
+* Kali Linux
 
 ### Cloning
 ```
 git clone https://github.com/4w4k3/Insanity-Framework.git
 ```
 
-## Running
+### Running
 ```
 python insanity.py
 ```
@@ -44,23 +49,23 @@ or
 python2.7 insanity.py
 ```
 
-## Screenshots
+### Screen
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
    More in [Screens](Screens)
 
-## Contribute
+### Contribute
 Send me more features it if you want :D
 
 **I need your Help to become it to better.**
 
-## To increase
+### To increase
 - File Transfer
 - Webcam Snaps and Streaming
 - Better compression of portables
 - Keylogging
 - Print Screens
 
-## Contact
+### Contact
 **4w4k3@protonmail.com**
 
 ## License
