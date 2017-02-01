@@ -28,6 +28,8 @@ Taken from [LICENSE](LICENSE).
 
 * apt
 * wine
+* python 2.7 in Wine Machine
+* pywin32 in Wine Machine
 * sudo
 * python2.7
 
