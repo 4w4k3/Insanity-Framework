@@ -1,5 +1,19 @@
 # Insanity-Framework
+Copyright 2017 Insanity Framework (IF)
+Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
+
 With the dynamics of persuasion that prove effective in a pentest, several painstaking means of making a payload has emerged, Insanity Framework provides speed and effectiveness in a single tool to help you work.
+
+## DISCLAIMER: 
+
+"DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+Taken from [LICENSE](LICENSE).
 
 ## Features 
 
@@ -33,9 +47,6 @@ python2.7 insanity.py
 ## Screenshots
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
 More on [Screens](Screens)
-## Authors
-
-* **Alisson Moretto** - *Coder* - [4w4k3](https://github.com/4w4k3)
 
 ## Contribute
 Send me more features it if you want :D
