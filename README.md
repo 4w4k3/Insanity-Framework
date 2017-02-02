@@ -23,7 +23,8 @@ Taken from [LICENSE](LICENSE).
 - Remote Control.
 - Payload Generation.
 - Some Phishing methods are included on payloads generated.
-- Detect Virtual Machines
+- Detect Virtual Machines.
+- Multiple Session disabled.
 - Persistence and others features can be enabled.
 
 ### Prerequisites
