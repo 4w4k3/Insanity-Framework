@@ -28,5 +28,6 @@ def two():
             print '[*] New Version is available =D Visit: https://github.com/4w4k3/Insanity-Framework'.format(GREEN, END)
         else:
             print '[*] You Already have the latest version =D'
+        os.system('sudo rm -Rf version2.txt')
 
 two()
