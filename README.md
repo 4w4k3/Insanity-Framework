@@ -46,11 +46,13 @@ git clone https://github.com/4w4k3/Insanity-Framework.git
 
 ### Running
 ```
-python insanity.py
+sudo python insanity.py
 ```
-or
+
+If you have another version of Python:
+
 ```
-python2.7 insanity.py
+sudo python2.7 insanity.py
 ```
 
 ### Screen
