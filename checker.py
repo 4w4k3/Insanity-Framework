@@ -9,9 +9,7 @@ BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m'
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
 os.system('apt-get install sudo')
-os.system('sudo dpkg --add-architecture i386')
-os.system('sudo apt-get update')
-os.system('sudo apt-get install wine')
+os.system('sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get install wine')
 os.system('clear')
 print '\n'
 print ' ################################################################## '
