@@ -28,6 +28,7 @@ Taken from [LICENSE](LICENSE).
 
 * apt
 * wine
+* wget
 * python 2.7 on Wine Machine
 * pywin32 on Wine Machine
 * VCForPython27 on Wine Machine
