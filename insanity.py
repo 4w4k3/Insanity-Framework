@@ -86,13 +86,13 @@ def asker():
 	pp()
         raise SystemExit
     elif choice == '1':
-        os.system('python2.7 dammed.py')
+        os.system('sudo python2.7 dammed.py')
         raise SystemExit
     elif choice == '2':
-        os.system('python2.7 striker.py')
+        os.system('sudo python2.7 striker.py')
         raise SystemExit
     elif choice.upper() == 'U':
-        os.system('python2.7 updater.py')
+        os.system('sudo python2.7 updater.py')
         asker()
     elif choice.upper() == 'IFCONFIG':
 	os.system(str(choice)) 
@@ -103,7 +103,7 @@ def asker():
     elif choice.upper() == 'BACK':
         main()
     elif choice.upper() == 'UPDATE':
-        os.system('python2.7 updater.py')
+        os.system('sudo python2.7 updater.py')
         asker()
     else:             
 	clear()            
@@ -132,13 +132,13 @@ def disclaimer():
             u$$$$$$$u$$$$$$$u
              u$"$"$"$"$"$"$u
   uuu        $$u$ $ $ $ $u$$       uuu
- u$$$$        $$$$$u$u$u$$$       u$$$$
-  $$$$$uu      "$$$$$$$$$"     uu$$$$$$     
-u$$$$$$$$$$$uu    """""    uuuu$$$$$$$$$$
-$$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"
- """      ""$$$$$$$$$$$uu ""$"""               Pʀᴇss [ᴇɴᴛᴇʀ] ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ
+ u$$$$        $$$$$u$u$u$$$       u$$$$        * { Tᴏ ᴍᴀɪɴᴛᴀɪɴ ᴇꜰꜰɪᴄɪᴇɴᴄʏ } *
+  $$$$$uu      "$$$$$$$$$"     uu$$$$$$         ᴅᴏɴ'ᴛ ᴜᴘʟᴏᴀᴅ ᴛᴏ VIRUS TOTAL 
+u$$$$$$$$$$$uu    """""    uuuu$$$$$$$$$$            ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ sᴄᴀɴ,
+$$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"       ᴜᴘʟᴏᴀᴅ ᴛᴏ NODISTRIBUTE.COM     
+ """      ""$$$$$$$$$$$uu ""$"""               
            uuuu ""$$$$$$$$$$uuu 
-  u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$
+  u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$         Pʀᴇss [ᴇɴᴛᴇʀ] ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ
   $$$$$$$$$$""""           ""$$$$$$$$$$$" 
    "$$$$$"                      ""$$$$""
      $$$"                         $$$$"
@@ -181,16 +181,16 @@ def main():
 		pp()
                 raise SystemExit
             elif choice == '1':
-                os.system('python2.7 dammed.py')
+                os.system('sudo python2.7 dammed.py')
                 sys.exit(0)
             elif choice == '2':
-                os.system('python2.7 striker.py')
+                os.system('sudo python2.7 striker.py')
                 raise SystemExit
             elif choice.upper == 'UPDATE':
-                os.system('python2.7 updater.py')
+                os.system('sudo python2.7 updater.py')
                 asker()
 	    elif choice.upper() == 'U':
-                os.system('python2.7 updater.py')
+                os.system('sudo python2.7 updater.py')
                 asker()
             elif choice == 'ifconfig':
 		os.system(str(choice)) 
