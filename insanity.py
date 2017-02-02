@@ -121,10 +121,9 @@ def asker():
     elif choice == '2':
         os.system('python2.7 striker.py')
         raise SystemExit
-    elif choice.upper() == 'UPDATE':
-        updater()
     elif choice.upper() == 'U':
         os.system('python2.7 updater.py')
+        asker()
     elif choice.upper() == 'IFCONFIG':
 	os.system(str(choice)) 
         asker()
@@ -135,6 +134,7 @@ def asker():
         main()
     elif choice.upper() == 'UPDATE':
         os.system('python2.7 updater.py')
+        asker()
     else:             
 	clear()            
 	print 'Invalid Option'
@@ -213,8 +213,10 @@ def main():
                 raise SystemExit
             elif choice.upper == 'UPDATE':
                 os.system('python2.7 updater.py')
+                asker()
 	    elif choice.upper() == 'U':
                 os.system('python2.7 updater.py')
+                asker()
             elif choice == 'ifconfig':
 		os.system(str(choice)) 
                 asker()
@@ -223,8 +225,6 @@ def main():
                 asker() 
             elif choice == 'back':
 		main()
-            elif choice.upper() == 'update':
-		os.system('python2.7 updater.py')
             else:             
 		clear()            
 		print 'Invalid Option'
