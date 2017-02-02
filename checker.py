@@ -2,8 +2,6 @@
 # Written by: * Alisson Moretto - 4w4k3
 # https://github.com/4w4k3/Insanity-Framework
 # Licensed under the BSD-3-Clause
-
-import urllib2
 import os
 import sys
 BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
@@ -11,6 +9,7 @@ BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m'
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
 os.system('apt-get install sudo')
+os.system('sudo apt-get install wget')
 os.system('sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get install wine')
 os.system('clear')
 print '\n'
@@ -26,6 +25,7 @@ raw_input('                            ')
 os.system('winecfg')
 os.system('wine msiexec /i python-2.7.13.msi /L*v log.txt')
 os.system('wine pywin32.exe')
+os.system('wine pywin32.exe')
 os.system('wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller')
 os.system('wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall Crypto')
 os.system('wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall pycrypto')
@@ -39,13 +39,7 @@ print '                          - PLEASE WAIT -'
 print '\n'
 print '\n'
 print ' ################################################################## '
-def one():
-	response = urllib2.urlopen('https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi')
-	data = response.read()
-	fileup = open("VCForPython27.msi", 'w')
-	fileup.write(data)
-	fileup.close()
-one()
+os.system('wget https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi')
 os.system('wine msiexec /i VCForPython27.msi /L*v log2.txt')
 os.system('wine /root/.wine/drive_c/Python27/python.exe -m pip install pycrypto')
 os.system('mkdir .OK')
