@@ -10,6 +10,9 @@ import sys
 import base64
 from time import sleep
 
+if not os.geteuid() == 0:
+    sys.exit('Insanity must be run as root')
+    
 HOST = ''
 PORT = int(raw_input('Tʏᴘᴇ ᴛʜᴇ ᴘᴏʀᴛ: '))
 
