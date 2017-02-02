@@ -45,7 +45,7 @@ print '\n'
 print '\n'
 print ' ################################################################## '
 os.system('wget https://ufpr.dl.sourceforge.net/project/pywin32/pywin32/Build%20220/pywin32-220.win32-py2.7.exe')
-os.system('sudo wine win32-py2.7.exe')
+os.system('sudo wine win32-220.win32-py2.7.exe')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall Crypto')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall pycrypto')
@@ -60,7 +60,8 @@ print '\n'
 print '\n'
 print ' ################################################################## '
 os.system('wget https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi')
-one()
 os.system('sudo wine msiexec /i VCForPython27.msi /L*v log2.txt')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip install pycrypto')
 os.system('mkdir .OK')
+os.system('sudo rm -Rf log2.txt')
+os.system('sudo rm -Rf log.txt')
