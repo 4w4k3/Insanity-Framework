@@ -71,8 +71,6 @@ Send me more features it if you want :D
 ### Contact
 **4w4k3@protonmail.com**
 
-**Telegram Group:** https://t.me/joinchat/AAAAAAwbI7KU5sjsHNndEg
-
 ## License
 
 This project is licensed under the BSD-3-Clause - see the [LICENSE](LICENSE) file for details.
