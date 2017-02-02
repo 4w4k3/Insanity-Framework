@@ -42,12 +42,12 @@ Taken from [LICENSE](LICENSE).
 
 * Kali Linux
 
-### Cloning
+### Cloning:
 ```
 git clone https://github.com/4w4k3/Insanity-Framework.git
 ```
 
-### Running
+### Running:
 ```
 sudo python insanity.py
 ```
@@ -58,13 +58,13 @@ If you have another version of Python:
 sudo python2.7 insanity.py
 ```
 
-### Screen
+### Screenshot:
 ![Shot](https://github.com/4w4k3/Insanity-Framework/blob/master/Screens/shot.png)
 
 More in [Screens](Screens)
 
-### Contribute
-Send me more features it if you want :D
+### Contribute:
+Send me more features if you want it :D
 
 **I need your Help to become it to better.**
 
@@ -75,9 +75,9 @@ Send me more features it if you want :D
 - Keylogging
 - Print Screens
 
-### Contact
+### Contact:
 **4w4k3@protonmail.com**
 
-## License
+## License:
 
 This project is licensed under the BSD-3-Clause - see the [LICENSE](LICENSE) file for details.
