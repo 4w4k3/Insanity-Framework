@@ -10,6 +10,8 @@ import time
 import os
 import getpass
 
+if not os.geteuid() == 0:
+    sys.exit('Insanity must be run as root')
 
 def clear():
     os.sytem('clear')
