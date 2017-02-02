@@ -4,7 +4,7 @@ Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
 
 With the dynamics of persuasion that prove effective in a pentest, several painstaking means of making a payload has emerged, Insanity Framework provides speed and effectiveness in a single tool to help you work.
 
-**Note: Insanity Payloads can delay 1 minute to connect, this is necessary for bypass more avs and sandboxes.
+**Note: Insanity Payloads can delay 1 minute to connect, this is necessary for bypass more avs and sandboxes.**
 
 ## DISCLAIMER: 
 
