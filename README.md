@@ -18,7 +18,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
 ## Tutorial
-See [HowToInstal](https://i.imgur.com/Lt4Kx02.mp4)
+See [HowToInstall](https://i.imgur.com/Lt4Kx02.mp4)
 
 ## Features 
 
