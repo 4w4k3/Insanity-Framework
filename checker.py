@@ -33,13 +33,13 @@ print '\n'
 print '\n'
 print ' ################################################################## '
 os.system('wget https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi')
-os.system('wine msiexec /i python-2.7.13.msi /L*v log.txt')
+os.system('sudo wine msiexec /i python-2.7.13.msi /L*v log.txt')
 os.system('clear')
 print '\n'
 print ' ################################################################## '
 print '\n'
 print '\n'
-print '             *{0} DOWNLOADING WIN32-OY2.7.exe {1}* '.format(GREEN, END)
+print '             *{0} DOWNLOADING PYWIN32-OY2.7.exe {1}* '.format(GREEN, END)
 print '                          - PLEASE WAIT -'
 print '\n'
 print '\n'
