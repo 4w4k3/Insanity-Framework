@@ -45,7 +45,7 @@ print '\n'
 print '\n'
 print ' ################################################################## '
 os.system('wget https://ufpr.dl.sourceforge.net/project/pywin32/pywin32/Build%20220/pywin32-220.win32-py2.7.exe')
-os.system('sudo wine win32-220.win32-py2.7.exe')
+os.system('sudo wine pywin32-220.win32-py2.7.exe')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall Crypto')
 os.system('sudo wine /root/.wine/drive_c/Python27/python.exe -m pip uninstall pycrypto')
