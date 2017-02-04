@@ -12,6 +12,7 @@ os.system('apt-get install sudo')
 os.system('sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get install wine')
 os.system('sudo apt-get install wine32')
 os.system('sudo apt-get -f install')
+os.system('sudo apt-get install wine32')
 os.system('clear')
 print '\n'
 print ' ################################################################## '
