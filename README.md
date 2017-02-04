@@ -17,6 +17,9 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
+## Tutorial
+![HowToInstal](https://i.imgur.com/Lt4Kx02.mp4)
+
 ## Features 
 
 - Bypass most AV and Sandboxes.
