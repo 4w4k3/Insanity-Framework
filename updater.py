@@ -4,30 +4,26 @@
 # Written by: * Alisson Moretto - 4w4k3
 # https://github.com/4w4k3/Insanity-Framework
 # Licensed under the BSD-3-Clause
-import sys
 import urllib2
-import os
+import subprocess
 
-def one():
-	response = urllib2.urlopen('https://raw.githubusercontent.com/4w4k3/Insanity-Framework/master/version.txt')
-	data = response.read()
-	fileup = open("version2.txt", 'w')
-	fileup.write(data)
-	fileup.close()
-one()
 
-def two():
-	updatechk = open('version2.txt', 'r')
-	xd2 = updatechk.read()
-	print updatechk.read()
-	version = open('version.txt', 'r')
-	xd = version.read()
-	version.close()
-	updatechk.close()
-	if xd2 != xd:
-            print '[*] New Version are available =D' + '\n' + 'Visit: https://github.com/4w4k3/Insanity-Framework'
-	else:
-            print '[*] You Already have the latest version =D'
-        os.system('sudo rm -Rf version2.txt')
+def update_client_version(version):
+    """ Update the client version with the latest git version """
+    with open("version.txt", "r") as vnum:
+        if vnum.read() != version:
+            print("[*] Updating to latest version..")
+            subprocess.call(["git", "pull", "master"])
+        else:
+            print("[*] You already have the latest version.")
 
-two()
+
+def main():
+    """ Main function that calls the update function """
+    update_client_version(
+        urllib2.urlopen("https://raw.githubusercontent.com/4w4k3/Insanity-Framework/master/version.txt").read()
+    )
+
+
+if __name__ == '__main__':
+    main()
