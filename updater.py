@@ -4,26 +4,27 @@
 # Written by: * Alisson Moretto - 4w4k3
 # https://github.com/4w4k3/Insanity-Framework
 # Licensed under the BSD-3-Clause
-import urllib2
 import subprocess
+import urllib2
 
 
 def update_client_version(version):
-    """ Update the client version with the latest git version """
     with open("version.txt", "r") as vnum:
         if vnum.read() != version:
-            print("[*] Updating to latest version..")
-            subprocess.call(["git", "pull", "master"])
+            return True
         else:
-            print("[*] You already have the latest version.")
+            return False
 
 
 def main():
-    """ Main function that calls the update function """
-    update_client_version(
-        urllib2.urlopen("https://raw.githubusercontent.com/4w4k3/Insanity-Framework/master/version.txt").read()
-    )
+    version = urllib2.urlopen("https://raw.githubusercontent.com/4w4k3/Insanity-Framework/master/version.txt").read()
+    if update_client_version(version) is True:
+        subprocess.call(["git", "pull", "master"])
+        return "[*] Updated to latest version: v{}..".format(version)
+    else:
+        return "[*] You are already up to date with git origin master."
 
 
 if __name__ == '__main__':
-    main()
+    print("[*] Checking version information..")
+    print(main())
