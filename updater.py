@@ -19,7 +19,7 @@ def update_client_version(version):
 def main():
     version = urllib2.urlopen("https://raw.githubusercontent.com/4w4k3/Insanity-Framework/master/version.txt").read()
     if update_client_version(version) is True:
-        subprocess.call(["git", "pull", "master"])
+        subprocess.call(["git", "pull", "origin", "master"])
         return "[*] Updated to latest version: v{}..".format(version)
     else:
         return "[*] You are already up to date with git origin master."
