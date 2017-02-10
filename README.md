@@ -35,11 +35,12 @@ Taken from [LICENSE](LICENSE).
 * apt
 * wine
 * wget
+* Linux
+* sudo
+* python2.7
 * python 2.7 on Wine Machine
 * pywin32 on Wine Machine
 * VCForPython27 on Wine Machine
-* sudo
-* python2.7
 
 ### Tested on:
 
