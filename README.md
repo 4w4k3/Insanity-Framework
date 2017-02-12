@@ -2,7 +2,7 @@
 
 * **  VERSION 1.0 STABLE RELEASED !!! ** *
 
-** New features added!
+** New features added!**
 
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
