@@ -1,6 +1,6 @@
 # Insanity-Framework
 
-* **  VERSION 1.0 STABLE RELEASED !!! **
+* **  VERSION 1.0 STABLE RELEASED !!! ** *
 
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
@@ -29,6 +29,8 @@ Taken from [LICENSE](LICENSE).
 - Detect Virtual Machines.
 - Multiple Session disabled.
 - Persistence and others features can be enabled.
+- Bypass UAC. [NEW]
+- Memory Injection. [NEW]
 
 ### Prerequisites
 
@@ -44,7 +46,11 @@ Taken from [LICENSE](LICENSE).
 
 ### Tested on:
 
-* Kali Linux
++ Kali Linux - SANA
++ Kali Linux - ROLLING
++ Ubuntu 14.04-16.04 LTS
++ Debian 8.5
++ Linux Mint 18.1
 
 ### Cloning:
 ```
@@ -75,7 +81,6 @@ Send me more features if you want it :D
 ### To increase:
 - File Transfer
 - Webcam Snaps and Streaming
-- Better compression of portables
 - Keylogging
 - Print Screens
 
