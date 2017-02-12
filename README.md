@@ -2,10 +2,12 @@
 
 * **  VERSION 1.0 STABLE RELEASED !!! ** *
 
+** New features added!
+
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
 
-With the dynamics of persuasion that prove effective in a pentest, several painstaking means of making a payload has emerged, Insanity Framework provides speed and effectiveness in a single tool to help you work.
+Insanity Payload consists of encrypting your code and decrypting it in memory, thus avoiding a possible av signature, also has the ability to wait long enough to bypass a running sandbox. 
 
 **Note: Insanity Payloads can delay 1 minute to connect, this is necessary for bypass more avs and sandboxes.**
 
