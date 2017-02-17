@@ -38,8 +38,7 @@ def download_python():
 
 def download_python_win_exten():
     """ Download Windows extenstion for python without checking the checksum.. """
-    banner("Downloading pywin32-220.win32-py2.7.exe (Windows extension), please wait...")
-    urllib.URLopener().retrieve("https://ufpr.dl.sourceforge.net/project/pywin32/pywin32/Build%20220/pywin32-220.win32-py2.7.exe")
+    banner("Installing pywin32-220.win32-py2.7.exe (Windows extension), please wait...")
     os.system('sudo wine pywin32-220.win32-py2.7.exe')
     os.system(
         'sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe install pyinstaller')
