@@ -15,6 +15,7 @@ def banner(text, char="*"):
 def install_dependencies():
     """ Install the dependencies needed to run the program """
     os.system('apt-get install sudo')
+    os.system('sudo apt-get install wget -y')
     os.system('sudo dpkg --add-architecture i386')
     os.system('sudo apt-get update && sudo apt-get install wine -y')
     os.system('sudo apt-get dist-upgrade -yy && apt-get upgrade -yy')
@@ -31,7 +32,7 @@ def install_dependencies():
 def download_python():
     """ Download python for some reason..? """
     banner("Downloading Python 2.7.x.msi, please wait...")
-    urllib.URLopener().retrieve("https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi")
+    os.system('wget https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi')
     os.system('sudo wine msiexec /i python-2.7.12.msi /L*v log.txt')
     os.system('clear')
 
@@ -51,7 +52,6 @@ def download_python_win_exten():
 def download_vc_for_py():
     """ Download the VC extenstion for python, this is a little less scary because it's from MS """
     banner("Downloading VCForPython27.msi, please wait...")
-    urllib.URLopener().retrieve("https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi")
     os.system('wget https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi')
     os.system('sudo wine msiexec /i VCForPython27.msi /L*v log2.txt')
     os.system('mkdir .OK')
