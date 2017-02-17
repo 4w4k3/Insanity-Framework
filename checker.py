@@ -3,8 +3,6 @@
 # https://github.com/4w4k3/Insanity-Framework
 # Licensed under the BSD-3-Clause
 import os
-import urllib
-
 
 def banner(text, char="*"):
     print(char * len(text) + "****")
