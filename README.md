@@ -2,8 +2,6 @@
 
 * **  VERSION 1.0 STABLE RELEASED !!! ** *
 
-** New features added!**
-
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
 
@@ -53,6 +51,7 @@ Taken from [LICENSE](LICENSE).
 + Ubuntu 14.04-16.04 LTS
 + Debian 8.5
 + Linux Mint 18.1
++ Black Arch Linux
 
 ### Cloning:
 ```
