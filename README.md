@@ -9,6 +9,8 @@ Insanity Payload consists of encrypting your code and decrypting it in memory, t
 
 **Note: Insanity Payloads can delay 1 minute to connect, this is necessary for bypass more avs and sandboxes.**
 
+Twitter: @4w4k3Official
+
 ## DISCLAIMER: 
 
 "DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
