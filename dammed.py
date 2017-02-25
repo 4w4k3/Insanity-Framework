@@ -155,7 +155,7 @@ def asker():
         os.rename('dist/new.exe', 'dist/' + name)
         clear()
         heading()
-        os.system('sudo rm -Rf Templates/insane_enc.py')               
+        os.system('sudo rm -Rf Templates/insane_enc.py')
         print '{0}[*] Sᴀᴠᴇᴅ ᴛᴏ:  {1}'.format(GREEN, END) + 'dist/' + name
         print '''\n *{0} Fᴏʀ ʀᴇᴀsᴏɴ ᴛᴏ ʙʏᴘᴀss ᴍᴏsᴛ AVs ᴀɴᴅ Sᴀɴᴅʙᴏxᴇs,
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
