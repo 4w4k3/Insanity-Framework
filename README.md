@@ -7,7 +7,7 @@ Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
 
 Insanity Payload consists of encrypting your code and decrypting it in memory, thus avoiding a possible av signature, also has the ability to wait long enough to bypass a running sandbox. 
 
-**Note: Insanity Payloads can delay 1 minute to connect, this is necessary for bypass more avs and sandboxes.**
+##### **NOTE: Insanity payloads may experience a 1 minute delay while connecting, this is necessary in order to bypass most avs and sandboxes. **
 
 Twitter: @4w4k3Official
 
@@ -22,6 +22,13 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
+## INSTALLATION OF DEPENDENT LIBRARIES
+`cd Insanity-Framework`
+
+`pip install -r requirements.txt`
+
+That's it
+
 ## Features 
 
 - Bypass most AV and Sandboxes.
@@ -34,13 +41,13 @@ Taken from [LICENSE](LICENSE).
 - Bypass UAC. [NEW]
 - Memory Injection. [NEW]
 
-### Prerequisites
+### Needed dependencies
 
 * apt
 * wine
 * wget
 * Linux
-* sudo
+* sudo access
 * python2.7
 * python 2.7 on Wine Machine
 * pywin32 on Wine Machine
@@ -79,10 +86,10 @@ More in [Screens](Screens)
 ### Contribute:
 Send me more features if you want it :D
 
-**I need your Help to become it to better.**
+**I need your help for Insanity to become better!**
 
-### To increase:
-- File Transfer
+### Things needed to be improved and future updates:
+- File Transfer (FTP)
 - Webcam Snaps and Streaming
 - Keylogging
 - Print Screens
