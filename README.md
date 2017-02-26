@@ -1,6 +1,6 @@
 # Insanity-Framework
 
-* **  VERSION 1.0 STABLE RELEASED !!! ** *
+* **  VERSION 1.6 RELEASED !!! ** *
 
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
