@@ -4,6 +4,7 @@
 
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
+Special Thaabks to **Thomas Perkins** - [Ekultek](https://github.com/Ekultek)
 
 Insanity Payload consists of encrypting your code and decrypting it in memory, thus avoiding a possible av signature, also has the ability to wait long enough to bypass a running sandbox. 
 
