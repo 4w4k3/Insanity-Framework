@@ -11,7 +11,7 @@ import random
 
 
 KEY_LENGTH = 32
-random_string_payload = ''.join(random.sample((string.ascii_uppercase + string.digits), KEY_LENGTH))
+RANDOM_STRING_PAYLOAD = ''.join(random.sample((string.ascii_uppercase + string.digits), KEY_LENGTH))
 PAD = '@'
 
 
@@ -48,7 +48,7 @@ def main():
     create_payload_script(
         insanity_template_one,
         insanity_template_two,
-        random_string_payload
+        RANDOM_STRING_PAYLOAD
     )
 
 

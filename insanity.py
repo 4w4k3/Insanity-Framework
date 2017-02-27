@@ -7,14 +7,16 @@
 import os
 import sys
 import time
+from bin.settings import exec_com
+from bin.settings import RED, WHITE, END
 
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
-    
+
+
 def clear():
     os.system('clear')
 
-BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
 def heading():
     os.system('clear')
@@ -40,6 +42,7 @@ def heading():
                               :                  ʙʏ: ''' + WHITE + '''ᴀʟɪssᴏɴ ᴍᴏʀᴇᴛᴛᴏ(''' + RED + '''4ᴡ4ᴋ3''' + WHITE + ''')''' + RED +  '''                                         
  -- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ  --                            Version: 1.0 Stable               
 ''' + END)
+
 
 def optionBanner():
     print '! {0}[{1}1{0}]{1} Gᴇɴᴇʀᴀᴛᴇ FUD - {0}[{1}2{0}]{1} Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ !              {0}[{1}U{0}]{1} ᴜᴘᴅᴀᴛᴇ  {0}[{1}Q{0}]{1} ǫᴜɪᴛ'.format(RED, WHITE)
@@ -73,6 +76,7 @@ $$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                            i$" $$$$  $$#"`  """     W$$$$
 ''' + END)
 
+
 def asker():
     header = ('{0}InSaNiTy{1} > {2}'.format(RED, WHITE, END))
     choice = raw_input(header)
@@ -86,13 +90,13 @@ def asker():
 	pp()
         raise SystemExit
     elif choice == '1':
-        os.system('sudo python2.7 dammed.py')
+        exec_com('dammed.py', sudo=True)
         raise SystemExit
     elif choice == '2':
-        os.system('sudo python2.7 striker.py')
+        exec_com('striker.py', sudo=True)
         raise SystemExit
     elif choice.upper() == 'U':
-        os.system('sudo python2.7 updater.py')
+        exec_com('updater.py', sudo=True)
         asker()
     elif choice.upper() == 'IFCONFIG':
 	os.system(str(choice)) 
@@ -103,7 +107,7 @@ def asker():
     elif choice.upper() == 'BACK':
         main()
     elif choice.upper() == 'UPDATE':
-        os.system('sudo python2.7 updater.py')
+        exec_com('updater.py', sudo=True)
         asker()
     else:             
 	clear()            
@@ -112,6 +116,7 @@ def asker():
 	heading()
         optionBanner()
         asker()
+
  
 def disclaimer():
      clear()
@@ -152,7 +157,7 @@ def main():
     if os.path.isdir(path):
         pass
     else:
-        os.system('sudo python2.7 checker.py')
+        exec_com('checker.py', sudo=True)
 
     clear()
   
@@ -181,16 +186,16 @@ def main():
 		pp()
                 raise SystemExit
             elif choice == '1':
-                os.system('sudo python2.7 dammed.py')
+                exec_com('dammed.py', sudo=True)
                 sys.exit(0)
             elif choice == '2':
-                os.system('sudo python2.7 striker.py')
+                exec_com('striker.py', sudo=True)
                 raise SystemExit
             elif choice.upper == 'UPDATE':
-                os.system('sudo python2.7 updater.py')
+                exec_com('updater.py', sudo=True)
                 asker()
 	    elif choice.upper() == 'U':
-                os.system('sudo python2.7 updater.py')
+                exec_com('updater.py', sudo=True)
                 asker()
             elif choice == 'ifconfig':
 		os.system(str(choice)) 
@@ -214,7 +219,6 @@ def main():
 	pp()
         sys.exit(0)
 
+
 if __name__ == '__main__':
-
     main()
-
