@@ -40,10 +40,9 @@ def download_python_win_exten():
     """ Download Windows extenstion for python without checking the checksum.. """
     banner("Installing pywin32-220.win32-py2.7.exe (Windows extension), please wait...")
     os.system('sudo wine pywin32-220.win32-py2.7.exe')
-    os.system(
-        'sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe install pyinstaller')
-    os.system(
-        'sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe uninstall Crypto')
+    os.system('sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe install pyinstaller')
+    os.system('sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe uninstall Crypto')
+    os.system('sudo wine /root/.wine/drive_c/Python27/python.exe /root/.wine/drive_c/Python27/Scripts/pip.exe install pycrypto')
     os.system('clear')
 
 
