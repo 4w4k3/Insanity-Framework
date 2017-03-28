@@ -1,6 +1,7 @@
 # Insanity-Framework
 
-* **  VERSION 1.6 RELEASED !!! ** *
+## THIS PROJECT ARE CLOSED ##
+# FEEL FREE TO SHARE AND MODIFY
 
 Copyright 2017 Insanity Framework (IF)
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
