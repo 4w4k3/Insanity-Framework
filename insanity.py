@@ -152,14 +152,6 @@ $$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"       ᴜᴘʟᴏᴀᴅ ᴛᴏ NODISTR
 
 def main():
     clear()
-    path = '.OK'
-
-    if os.path.isdir(path):
-        pass
-    else:
-        exec_com('checker.py', sudo=True)
-
-    clear()
   
     disclaimer()
     raw_input('')  

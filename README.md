@@ -1,5 +1,9 @@
 # Insanity-Framework
-Copyright 2017 Insanity Framework (IF)
+
+THIS PROJECT ARE CLOSED NOW - FEEL FREE TO CONTINUE IT
+
+Copyright 2017 Insanity Framework (IF) 2.0 END
+
 Written by: * **Alisson Moretto** - [4w4k3](https://github.com/4w4k3)
 
 Special Thanks to **Thomas Perkins** - [Ekultek](https://github.com/Ekultek)
@@ -22,9 +26,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
 ## INSTALLATION OF DEPENDENT LIBRARIES
+
 `cd Insanity-Framework`
 
-`pip install -r requirements.txt`
+`chmod +x install.sh`
+
+`./install.sh`
 
 That's it
 
@@ -37,8 +44,8 @@ That's it
 - Detect Virtual Machines.
 - Multiple Session disabled.
 - Persistence and others features can be enabled.
-- Bypass UAC. [NEW]
-- Memory Injection. [NEW]
+- Bypass UAC. 
+- Memory Injection.
 
 ### Needed dependencies
 

