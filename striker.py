@@ -89,7 +89,7 @@ def mess():
     print '-{0} ʜᴇʟᴘ {1}- {0}[{1}View help message and modules{0}]{1}: '.format(BLUE, END)
 
 s = socket(AF_INET, SOCK_STREAM)
-print '[!] Wainting Connections '
+print '[!] Waiting Connections '
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
 print "[*] Listening on: 0.0.0.0:%s" % str(PORT)
