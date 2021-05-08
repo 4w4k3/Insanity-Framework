@@ -7,6 +7,7 @@
 import os
 import sys
 import time
+import datetime
 from bin.settings import exec_com
 from bin.settings import RED, WHITE, END
 
