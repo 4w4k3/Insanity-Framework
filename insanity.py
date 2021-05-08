@@ -7,17 +7,18 @@
 import os
 import sys
 import time
+import datetime
 from bin.settings import exec_com
 from bin.settings import RED, WHITE, END
 
 if not os.geteuid() == 0:
     sys.exit('Insanity must be run as root')
 
-
+# create def clear():
 def clear():
     os.system('clear')
 
-
+# create def heading():
 def heading():
     os.system('clear')
 
@@ -43,11 +44,11 @@ def heading():
  -- [I]ɴsᴀɴɪᴛʏ [F]ʀᴀᴍᴇᴡᴏʀᴋ  --                            Version: 1.0 Stable               
 ''' + END)
 
-
+# create def optionBanner():
 def optionBanner():
     print '! {0}[{1}1{0}]{1} Gᴇɴᴇʀᴀᴛᴇ FUD - {0}[{1}2{0}]{1} Sᴛᴀʀᴛ Lɪsᴛᴇɴᴇʀ !              {0}[{1}U{0}]{1} ᴜᴘᴅᴀᴛᴇ  {0}[{1}Q{0}]{1} ǫᴜɪᴛ'.format(RED, WHITE)
 
-
+# create def pp():
 def pp():
     sys.stdout.write(RED + '''
 $u       #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~
@@ -76,7 +77,7 @@ $$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                            i$" $$$$  $$#"`  """     W$$$$
 ''' + END)
 
-
+# create def asker():
 def asker():
     header = ('{0}InSaNiTy{1} > {2}'.format(RED, WHITE, END))
     choice = raw_input(header)
@@ -117,7 +118,7 @@ def asker():
         optionBanner()
         asker()
 
- 
+ # create def disclaimer():
 def disclaimer():
      clear()
      sys.stdout.write(WHITE + '''
@@ -149,7 +150,7 @@ $$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"       ᴜᴘʟᴏᴀᴅ ᴛᴏ NODISTR
      $$$"                         $$$$"
 ''')
     
-
+# create def main():
 def main():
     clear()
   
